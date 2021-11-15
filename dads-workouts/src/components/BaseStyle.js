@@ -6,7 +6,7 @@ const getDesignTokens = (mode) => ({
       primary: {
         ...amber,
         ...(mode === 'dark' && {
-          main: amber[300],
+          main: '#62239a',
         }),
       },
       ...(mode === 'dark' && {
@@ -22,7 +22,7 @@ const getDesignTokens = (mode) => ({
               secondary: grey[800],
             }
           : {
-              primary: '#fff',
+              primary: '#240b03',
               secondary: grey[500],
             }),
       },

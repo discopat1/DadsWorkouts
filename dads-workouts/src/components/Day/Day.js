@@ -4,6 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import DayOneList from './Day1List';
 
 export default function DayView() {
   const [day, setDay] = React.useState('');
@@ -28,6 +29,9 @@ export default function DayView() {
           <MenuItem value={3}>Three</MenuItem>
         </Select>
       </FormControl>
+      {day === 1 && (
+        <DayOneList/>
+    )}
     </Box>
   );
 }
