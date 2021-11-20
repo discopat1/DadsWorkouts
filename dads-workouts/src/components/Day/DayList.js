@@ -11,40 +11,17 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import Stack from '@mui/material/Stack';
 import FullScreenDialog from './VideoDialog';
 
-const exercises = [
-    {
-        name: 'Goblet Squats',
-        sets: 5,
-        reps: 5,
-        video: "https://www.youtube.com/embed/HB8QewGsIX4",
-        equipment: 'dumbell'
-    },
-    {
-        name: 'Band resisted Pushups',
-        sets: 5,
-        reps: 5,
-        video: "https://www.youtube.com/embed/cOFwFzzLFWw",
-        equipment: 'resistance band'
-    },
-    {
-        name: 'One Arm row',
-        sets: 4,
-        reps: '10-12',
-        video: "https://www.youtube.com/embed/edLIRbblDFg",
-        equipment: 'dumbell'
-    }
-]
-
-
-
-export default function DayOneList() {
+export default function DayList(props) {
+    const {
+        exercises
+    } = props
   return (
     <Box sx={{ width: '100%', maxWidth: 530, bgcolor: '#fff' }}>
       <nav aria-label="main mailbox folders">
         <List>
           {exercises.map(i=> (
               <ListItem>
-                  <Stack direction="row" spacing={2} alignItems="center">
+                  <Stack direction="row" spacing={2} alignItems="center" justifyContent='space-between'>
                   <ListItemText primary={i.name}  secondary={i.equipment}/>
                   <ListItemText primary={i.sets} secondary={Object.keys(i)[1]}/>
                   <ListItemText primary='X' />

@@ -4,7 +4,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import DayOneList from './Day1List';
+import exerciseMeta from '../Data/Data';
+import DayList from './DayList';
 
 export default function DayView() {
   const [day, setDay] = React.useState('');
@@ -30,8 +31,20 @@ export default function DayView() {
         </Select>
       </FormControl>
       {day === 1 && (
-        <DayOneList/>
-    )}
+        <DayList
+            exercises={exerciseMeta.day1Exercises}
+        />
+        )}
+        {day === 2 && (
+            <DayList
+                exercises={exerciseMeta.day2Exercises}
+            />
+        )}
+        {day === 3 && (
+            <DayList
+                exercises={exerciseMeta.day3Exercises}
+            />
+        )}
     </Box>
   );
 }
