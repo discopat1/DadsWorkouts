@@ -10,6 +10,7 @@ import Menu from '@mui/material/Menu';
 import getDesignTokens from './BaseStyle';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import DayView from './Day/Day';
+import WeekView from './Week/Week';
 
 export default function Base() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -72,6 +73,9 @@ export default function Base() {
     </Box>
     {view === 'Day' && (
         <DayView/>
+    )}
+    {view === 'Week' && (
+        <WeekView/>
     )}
     </ThemeProvider>
   );

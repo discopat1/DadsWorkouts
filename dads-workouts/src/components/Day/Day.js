@@ -7,7 +7,10 @@ import Select from '@mui/material/Select';
 import exerciseMeta from '../Data/Data';
 import DayList from './DayList';
 
-export default function DayView() {
+export default function DayView(props) {
+  const {
+      week
+  } = props
   const [day, setDay] = React.useState('');
 
   const handleChange = (event) => {
@@ -32,17 +35,17 @@ export default function DayView() {
       </FormControl>
       {day === 1 && (
         <DayList
-            exercises={exerciseMeta.day1Exercises}
+            exercises={exerciseMeta.week1.day1Exercises}
         />
         )}
         {day === 2 && (
             <DayList
-                exercises={exerciseMeta.day2Exercises}
+                exercises={exerciseMeta.week1.day2Exercises}
             />
         )}
         {day === 3 && (
             <DayList
-                exercises={exerciseMeta.day3Exercises}
+                exercises={exerciseMeta.week1.day3Exercises}
             />
         )}
     </Box>
