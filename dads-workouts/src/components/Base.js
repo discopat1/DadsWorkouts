@@ -61,9 +61,9 @@ export default function Base() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={() => handleMenuItem('Cycle')}>Cycle</MenuItem>
+                {/* <MenuItem onClick={() => handleMenuItem('Cycle')}>Cycle</MenuItem> */}
                 <MenuItem onClick={() => handleMenuItem('Week')}>Week</MenuItem>
-                <MenuItem onClick={() => handleMenuItem('Day')}>Day</MenuItem>
+                {/* <MenuItem onClick={() => handleMenuItem('Day')}>Day</MenuItem> */}
         </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Menu

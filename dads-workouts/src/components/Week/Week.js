@@ -7,15 +7,95 @@ import Select from '@mui/material/Select';
 import DayList from '../Day/DayList';
 import exerciseMeta from '../Data/Data';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
 
 export default function WeekView() {
   const [week, setWeek] = React.useState('');
+  const [renderWeek, setRenderWeek] = React.useState(true)
 
   const handleChange = (event) => {
     setWeek(event.target.value);
+    setRenderWeek(true)
   };
 
+  const renderWeekView = (value) => {
+    if (value===1) {
+        return (
+        <WeekSet
+            day1={exerciseMeta.week1.day1Exercises}
+            day2={exerciseMeta.week1.day2Exercises}
+            day3={exerciseMeta.week1.day3Exercises}
+        />
+      )
+        } else if (value === 2) {
+       return (
+        <WeekSet
+            day1={exerciseMeta.week2.day1Exercises}
+            day2={exerciseMeta.week2.day2Exercises}
+            day3={exerciseMeta.week2.day3Exercises}
+        />
+      )
+       } else if (value === 3) {
+       return (
+        <WeekSet
+          day1={exerciseMeta.week3.day1Exercises}
+          day2={exerciseMeta.week3.day2Exercises}
+          day3={exerciseMeta.week3.day3Exercises}
+        />
+      )
+       }
+  }
+
+  const renderDayView = (day) => {
+      setRenderWeek(false)
+      return(
+        <DayList
+            exercises={day}
+        />
+      )
+  }
+
+  function WeekSet(props) {
+
+    const {
+        day1,
+        day2,
+        day3
+    } = props
+
+      return (
+        <React.Fragment>
+        <Grid container spacing={2}>
+            <Grid item xs={4}>
+                <Button variant="contained"
+                    // onClick={renderDayView(day1)}
+                >Day view</Button>
+                <DayList
+                    exercises={day1}
+                />
+            </Grid>
+            <Grid item xs={4}>
+                <Button variant="contained" 
+                    // onClick={renderDayView(day2)}
+                    >Day view</Button>
+                <DayList
+                    exercises={day2}
+                />
+            </Grid>
+            <Grid item xs={4}>
+                <Button variant="contained" 
+                    // onClick={renderDayView(day3)}
+                    >Day view</Button>
+                <DayList
+                    exercises={day3}
+                />
+            </Grid>
+        </Grid>
+        </React.Fragment>
+      )
+  }
+  console.log('render week:', renderWeek)
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
@@ -33,63 +113,8 @@ export default function WeekView() {
           <MenuItem value={4}>Four</MenuItem>
         </Select>
       </FormControl>
-      {week === 1 && (
-        <Grid container spacing={2}>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week1.day1Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week1.day2Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week1.day3Exercises}
-                />
-            </Grid>
-        </Grid>
-      )}
-      {week === 2 && (
-        <Grid container spacing={2}>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week2.day1Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week2.day2Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week2.day3Exercises}
-                />
-            </Grid>
-        </Grid>
-      )}
-      {week === 3 && (
-        <Grid container spacing={2}>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week3.day1Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week3.day2Exercises}
-                />
-            </Grid>
-            <Grid item xs={4}>
-                <DayList
-                    exercises={exerciseMeta.week3.day3Exercises}
-                />
-            </Grid>
-        </Grid>
-      )}
+      {renderWeek ? renderWeekView(week) : null}
+      {/* {renderWeekView(week)} */}
     </Box>
   );
 }

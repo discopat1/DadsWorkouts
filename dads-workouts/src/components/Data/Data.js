@@ -183,7 +183,7 @@ const exerciseMeta = {
                 name: 'Overhead Press',
                 sets: 3,
                 reps: '10-15',
-                video: "",
+                video: "https://www.youtube.com/embed/d2uus7QUt4c",
                 equipment: 'PVC and resistance band'
             },
         ],
@@ -202,7 +202,7 @@ const exerciseMeta = {
                 name: 'Plyo pushups',
                 sets: 5,
                 reps: 5,
-                video: "",
+                video: "https://www.youtube.com/embed/QcAAKuEgYjw",
                 equipment: 'bench and dumbells'
             },
             {
