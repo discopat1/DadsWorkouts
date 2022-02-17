@@ -1,108 +1,5 @@
 const exerciseMeta = {
-    day1Exercises: [
-        {
-            name: 'Goblet Squats',
-            sets: 5,
-            reps: 5,
-            video: "https://www.youtube.com/embed/HB8QewGsIX4",
-            equipment: 'dumbell'
-        },
-        {
-            name: 'Band resisted Pushups',
-            sets: 5,
-            reps: 5,
-            video: "https://www.youtube.com/embed/cOFwFzzLFWw",
-            equipment: 'resistance band'
-        },
-        {
-            name: 'One Arm row',
-            sets: 4,
-            reps: '10-12',
-            video: "https://www.youtube.com/embed/edLIRbblDFg",
-            equipment: 'dumbell'
-        },
-        {
-            name: 'Face pulls',
-            sets: 2,
-            reps: '15-25',
-            video: "https://www.youtube.com/embed/7CLtnN8S5b4",
-            equipment: 'resistance band'
-        }
-    ],
-    day2Exercises: [
-        {
-            name: 'Side lunges',
-            sets: 3,
-            reps: '8-12',
-            video: "https://www.youtube.com/embed/aUSO68yCpyc",
-            equipment: 'none'
-        },
-        {
-            name: 'One arm overhead press',
-            sets: 3,
-            reps: '8-12',
-            video: "https://www.youtube.com/embed/V7qZEEenaaU",
-            equipment: 'dumbell'
-        },
-        {
-            name: 'Reverse curls',
-            sets: 2,
-            reps: '15-20',
-            video: "https://www.youtube.com/embed/eve_ZgHapkw",
-            equipment: 'barbell'
-        },
-        {
-            name: 'Skull crushers',
-            sets: 2,
-            reps: '15-20',
-            video: "https://www.youtube.com/embed/ZUZOn9c1VVI",
-            equipment: 'dumbells'
-        },
-        {
-            name: 'Lateral raises',
-            sets: 2,
-            reps: '15-25',
-            video: "https://www.youtube.com/embed/iJXAOsS1sS4",
-            equipment: 'dumbells'
-        }
-    ],
-    day3Exercises: [
-        {
-            name: 'Hip-banded RDLs',
-            sets: 5,
-            reps: 5,
-            video: "https://www.youtube.com/embed/qnXt1rtemto",
-            equipment: 'dumbells and resistance band'
-        },
-        {
-            name: 'Lat Pulldown',
-            sets: 5,
-            reps: 5,
-            video: "https://www.youtube.com/embed/lVhrjZ_cemo",
-            equipment: 'PVC and resistance band'
-        },
-        {
-            name: 'Bench Dips',
-            sets: 3,
-            reps: '10-12',
-            video: "https://www.youtube.com/embed/5lSLml3Wd50",
-            equipment: 'bench'
-        },
-        {
-            name: 'Side Plank',
-            sets: 2,
-            reps: '30 seconds each side',
-            video: "https://www.youtube.com/embed/_R389Jk0tIo",
-            equipment: 'none'
-        },
-        {
-            name: 'Band pull-aparts',
-            sets: 3,
-            reps: '15-25',
-            video: "https://www.youtube.com/embed/kZDAZFxA3-c",
-            equipment: 'resistance band'
-        }
-    ],
+    
     week1: {
         day1Exercises: [
             {
@@ -330,6 +227,13 @@ const exerciseMeta = {
                 equipment: 'dumbell'
             },
             {
+                name: 'Turkish get up',
+                sets: 2,
+                reps: '3 each side',
+                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
+                equipment: 'dumbell'
+            },
+            {
                 name: 'Reverse curls',
                 sets: 2,
                 reps: '15-20',
@@ -388,6 +292,78 @@ const exerciseMeta = {
                 equipment: 'resistance band'
             }
         ],
+    },
+    week4: {
+        // turkish getups to keep the practice up
+        day1Exercises: [
+            // reverse lunges, one arm floor press, staggered stance row, lateral raises, pallof press
+            {
+                name: 'Reverse Lunges',
+                sets: 3,
+                reps: '10-15 each side',
+                video: "https://www.youtube.com/embed/kGYpWTXkO1I",
+                equipment: 'dumbells'
+            },
+            {
+                name: 'One arm floor press',
+                sets: 3,
+                reps: '10-15 each side',
+                video: "https://www.youtube.com/embed/Xu7QaebaQRI",
+                equipment: 'dumbell'
+            },
+            {
+                name: 'Iso lunge RB row',
+                sets: 4,
+                reps: '10-15 each side',
+                video: "https://www.youtube.com/embed/MpGb7mGkDOM",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Pallof press',
+                sets: 2,
+                reps: '15-25 each side',
+                video: "https://www.youtube.com/embed/jQ_HhXY3-p0",
+                equipment: 'resistance band'
+            },
+            
+        ],
+        day2Exercises: [
+            // turkish get ups, side clam open, incline y raises, band curls, band tri pushdowns
+            {
+                name: 'Turkish get up',
+                sets: 2,
+                reps: '3 each side',
+                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
+                equipment: 'dumbell'
+            },
+            {
+                name: 'Side plank clam shell',
+                sets: 3,
+                reps: '15-20 each side',
+                video: "https://www.youtube.com/embed/FhgJNgvyVVU",
+                equipment: 'none'
+            },
+            // build reusable function for supersets
+            {
+                name: 'Superset curls and tricep pushdowns',
+                sets: 3,
+                reps: '15-25',
+                video: "",
+                equipment: 'Resistance band'
+            },
+            {
+                name: 'Incline y-raise',
+                sets: 3,
+                reps: '15-25',
+                video: "https://www.youtube.com/embed/VHeZJHEj6ic",
+                equipment: 'dumbell'
+            },
+            
+            
+        ],
+        day3Exercises: [
+            // pull throughs, pull overs, band pull aparts, carries
+        ]
     }
 }
 

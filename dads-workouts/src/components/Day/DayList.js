@@ -15,6 +15,7 @@ export default function DayList(props) {
     const {
         exercises
     } = props
+    // need resuable function for super sets
   return (
     <Box sx={{ width: '100%', maxWidth: 530, bgcolor: '#fff' }}>
       <nav aria-label="main mailbox folders">
