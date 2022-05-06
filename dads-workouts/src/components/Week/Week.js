@@ -22,39 +22,40 @@ export default function WeekView() {
   const renderWeekView = (value) => {
     if (value===1) {
         return (
-        <WeekSet
-            day1={exerciseMeta.week1.day1Exercises}
-            day2={exerciseMeta.week1.day2Exercises}
-            day3={exerciseMeta.week1.day3Exercises}
-        />
-      )
+            <WeekSet
+                day1={exerciseMeta.week1.day1Exercises}
+                day2={exerciseMeta.week1.day2Exercises}
+                day3={exerciseMeta.week1.day3Exercises}
+            />
+        )
         } else if (value === 2) {
        return (
-        <WeekSet
-            day1={exerciseMeta.week2.day1Exercises}
-            day2={exerciseMeta.week2.day2Exercises}
-            day3={exerciseMeta.week2.day3Exercises}
-        />
-      )
+            <WeekSet
+                day1={exerciseMeta.week2.day1Exercises}
+                day2={exerciseMeta.week2.day2Exercises}
+                day3={exerciseMeta.week2.day3Exercises}
+            />
+        )
        } else if (value === 3) {
        return (
-        <WeekSet
-          day1={exerciseMeta.week3.day1Exercises}
-          day2={exerciseMeta.week3.day2Exercises}
-          day3={exerciseMeta.week3.day3Exercises}
-        />
-      )
-       }
+            <WeekSet
+            day1={exerciseMeta.week3.day1Exercises}
+            day2={exerciseMeta.week3.day2Exercises}
+            day3={exerciseMeta.week3.day3Exercises}
+            />
+        )
+       } else if (value === 4) {
+        return (
+            <WeekSet
+            day1={exerciseMeta.week4.day1Exercises}
+            day2={exerciseMeta.week4.day2Exercises}
+            day3={exerciseMeta.week4.day3Exercises}
+            />
+        )
+        }
   }
 
-  const renderDayView = (day) => {
-      setRenderWeek(false)
-      return(
-        <DayList
-            exercises={day}
-        />
-      )
-  }
+  
 
   function WeekSet(props) {
 
@@ -64,12 +65,21 @@ export default function WeekView() {
         day3
     } = props
 
+    const renderDayView = () => {
+      setRenderWeek(false)
+      return(
+        <DayList
+            exercises={day1}
+        />
+      )
+    }
+
       return (
         <React.Fragment>
         <Grid container spacing={2}>
             <Grid item xs={4}>
                 <Button variant="contained"
-                    // onClick={renderDayView(day1)}
+                    // onClick={renderDayView}
                 >Day view</Button>
                 <DayList
                     exercises={day1}
