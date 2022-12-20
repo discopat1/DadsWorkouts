@@ -1,304 +1,63 @@
 const exerciseMeta = {
-    
+    // Jan - Mar
+    // day 1 lower, day 2 upper, day 3 full body with helper exercises
     week1: {
         day1Exercises: [
             {
-                name: 'Bulgarian split squats',
-                sets: 3,
-                reps: '10-15 each leg',
-                video: "https://www.youtube.com/embed/hPlKPjohFS0",
-                equipment: 'Low bench, no weight'
-            },
-            {
-                name: 'Push ups',
-                sets: 3,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/i9sTjhN4Z3M",
-                equipment: 'Bench for elevation if necessary'
-            },
-            {
-                name: 'TRX Rows',
-                sets: 4,
-                reps: '10-12',
-                video: "https://www.youtube.com/embed/p8d2pFLDkEs",
-                equipment: 'TRX'
-            },
-            {
-                name: 'Face pulls',
+                name: 'Band assisted pogo hops',
                 sets: 2,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/7CLtnN8S5b4",
-                equipment: 'resistance band'
-            }
-        ],
-        day2Exercises: [
-            {
-                name: 'Turkish get up',
-                sets: 2,
-                reps: '3 each side',
-                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
-                equipment: 'kettlebell'
-            },
-            {
-                name: 'Hamstring curls',
-                sets: 3,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/8Wagn999nhA",
-                equipment: 'Yoga ball'
-            },
-            {
-                name: 'Prone Cobra',
-                sets: 2,
-                reps: '10 - 3 sec holds',
-                video: "https://www.youtube.com/embed/2Z7uGBbsvf8",
-                equipment: 'none'
-            },
-            {
-                name: 'Tricep Pushdown',
-                sets: 2,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/xW8L2POShSA",
-                equipment: 'Resistance Band'
-            },
-            {
-                name: 'Farmers carry',
-                sets: 3,
-                reps: '120 seconds',
-                video: "https://www.youtube.com/embed/rt17lmnaLSM",
-                equipment: 'dumbells'
-            },
-        ],
-        day3Exercises: [
-            {
-                name: 'Deadlift',
-                sets: 3,
-                reps: '10-15 each side',
-                video: "https://www.youtube.com/embed/nXPmvZDyydM",
-                equipment: 'kettlebells'
-            },
-            {
-                name: 'One hand Lat Pulldown',
-                sets: 4,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/OWvqEaT6Ohc",
+                reps: 10,
+                video: "https://www.youtube.com/embed/EpiVBAHCwew",
                 equipment: 'Resistance band'
             },
             {
-                name: 'One hand KB clean and press',
+                name: 'Band assissted Lunge jumps',
                 sets: 3,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/bNwMVXuF8C0",
-                equipment: '1 kettlebell'
-            },
-        ],
-    },
-    week2: {
-        day1Exercises: [
-            // dynamic
-            {
-                name: 'Lateral jumps',
-                sets: 5,
-                reps: '3 each direction',
-                video: "https://www.youtube.com/embed/2ksoF1EWcSU",
-                equipment: 'None'
-            },
-            {
-                name: 'Rotating One arm Press',
-                sets: 5,
-                reps: '5 each side',
-                video: "https://www.youtube.com/embed/Qy4NWI7lecw",
+                reps: '2 each leg',
+                video: "https://www.youtube.com/embed/4oJy7OooIcQ",
                 equipment: 'resistance band'
             },
             {
-                name: 'Chest supported rows',
+                name: 'Front squats',
                 sets: 4,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/nl2MnK1i504",
-                equipment: 'dumbells'
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/6XghYOzny8U",
+                equipment: 'kettlebells or dumbells'
             },
             {
-                name: 'Face pulls',
-                sets: 2,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/7CLtnN8S5b4",
-                equipment: 'resistance band'
-            }
-        ],
-        day2Exercises: [
-            {
-                name: 'Turkish get up',
-                sets: 2,
-                reps: '3 each side',
-                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
-                equipment: 'dumbell'
+                name: 'RDLs',
+                sets: 3,
+                reps: '6-10',
+                video: "https://www.youtube.com/embed/KrRtk8KbJik",
+                equipment: 'Dumbells or KBs'
             },
             {
                 name: 'Banded Glute Bridge',
-                sets: 3,
-                reps: '15-20 each side',
+                sets: 2,
+                reps: '15-20',
                 video: "https://www.youtube.com/embed/GjLPEfu5PN0",
                 equipment: 'resistance band'
             },
             {
-                name: 'Tricep Pushdown',
-                sets: 2,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/xW8L2POShSA",
-                equipment: 'Resistance Band'
-            },
-            {
-                name: 'Racked, Suitcase carry',
-                sets: 3,
-                reps: '90 seconds each side',
-                video: "https://www.youtube.com/embed/y6ECq7XQhUI?start=350",
-                equipment: 'Kettlebells'
-            },
-        ],
-        day3Exercises: [
-            // dynamic and mirror week 1 exercises
-            {
-                name: 'Double Kettlebell Swing',
-                sets: 5,
-                reps: 5,
-                video: "https://www.youtube.com/embed/Tr4yzNiqOWY",
-                equipment: 'kettlebells'
-            },
-            {
-                name: 'Gorilla Rows',
-                sets: 3,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/UsxcaALqr2c",
-                equipment: 'kettlebells'
-            },
-            {
-                name: 'Thrusters',
-                sets: 3,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/VdPjfmRcQfw",
-                equipment: 'Dumbells'
-            },
-            {
                 name: 'Band pull-aparts',
-                sets: 3,
+                sets: 2,
                 reps: '15-25',
                 video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
                 equipment: 'Resistance band'
             }
         ],
-    },
-    week3: {
-        day1Exercises: [
-            {
-                name: 'Front squats',
-                sets: 5,
-                reps: 5,
-                video: "https://www.youtube.com/embed/6XghYOzny8U",
-                equipment: 'kettlebells'
-            },
-            {
-                name: 'Bosu ball pushups',
-                sets: 5,
-                reps: 5,
-                video: "https://www.youtube.com/embed/oPL9M8BSfcc",
-                equipment: 'bosu ball'
-            },
-            {
-                name: 'Banded bent over rows',
-                sets: 4,
-                reps: '10-15',
-                video: "https://www.youtube.com/embed/-g6Yoe11S-4",
-                equipment: 'Dumbells or kettlbells and resistance band'
-            },
-            {
-                name: 'Trap 3 Raise',
-                sets: 2,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/2yw5ciEmUPg",
-                equipment: 'Dumbells or none'
-            }
-        ],
         day2Exercises: [
             {
-                name: 'Side lunges with sliders',
-                sets: 3,
-                reps: '8-10',
-                video: "https://www.youtube.com/embed/2rbLIlqnNhg",
-                equipment: 'sliders'
-            },
-            {
-                name: 'Turkish get up',
+                name: 'Y,W,Ts',
                 sets: 2,
-                reps: '3 each side',
-                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
-                equipment: 'dumbell'
-            },
-            {
-                name: 'Barbell curls',
-                sets: 2,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/WeZLdaLggAo",
-                equipment: 'PVC'
-            },
-            {
-                name: 'Tricep Pushdown',
-                sets: 2,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/xW8L2POShSA",
-                equipment: 'Resistance Band'
-            },
-            {
-                name: 'Band pull-aparts',
-                sets: 3,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/kZDAZFxA3-c",
-                equipment: 'resistance band'
-            }
-        ],
-        day3Exercises: [
-            {
-                name: 'Split stance RDL',
-                sets: 5,
-                reps: 5,
-                video: "https://www.youtube.com/embed/bPa182aZ3bE",
-                equipment: 'dumbells'
-            },
-            {
-                name: 'TRX Rows',
-                sets: 4,
-                reps: '10-12',
-                video: "https://www.youtube.com/embed/p8d2pFLDkEs",
-                equipment: 'TRX'
-            },
-            {
-                name: 'Pallof press',
-                sets: 2,
-                reps: '15-25 each side',
-                video: "https://www.youtube.com/embed/jQ_HhXY3-p0",
-                equipment: 'resistance band'
-            },
-            {
-                name: 'Face pulls',
-                sets: 2,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/7CLtnN8S5b4",
-                equipment: 'resistance band'
-            }
-        ],
-    },
-    week4: {
-        // turkish getups to keep the practice up
-        day1Exercises: [
-            {
-                name: 'Bosu side lunge',
-                sets: 3,
-                reps: '10-15 each side',
-                video: "https://www.youtube.com/embed/Ivv2RgZEAE0",
-                equipment: 'Bosu ball and dumbells as needed'
+                reps: '10 each',
+                video: "https://www.youtube.com/embed/jihh8FFWoMk",
+                equipment: 'yoga ball'
             },
             {
                 name: 'Bench press',
-                sets: 3,
-                reps: '10-15 each side',
+                sets: 4,
+                reps: '10-15',
                 video: "https://www.youtube.com/embed/G9nf-QZeYWI",
                 equipment: 'dumbells'
             },
@@ -310,37 +69,387 @@ const exerciseMeta = {
                 equipment: 'dumbells'
             },
             {
-                name: 'Turkish get up',
+                name: 'Dumbell overhead press',
                 sets: 2,
-                reps: '3 each side',
-                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
-                equipment: 'dumbell'
+                reps: '15',
+                video: "https://www.youtube.com/embed/Did01dFR3Lk",
+                equipment: 'dumbells'
             },
-            
+            {
+                name: 'Face pulls',
+                sets: 2,
+                reps: '15-25',
+                video: "https://www.youtube.com/embed/7CLtnN8S5b4",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Tricep Pushdown',
+                sets: 2,
+                reps: '15-20',
+                video: "https://www.youtube.com/embed/xW8L2POShSA",
+                equipment: 'Resistance Band'
+            },
+        ],
+        day3Exercises: [
+            {
+                name: 'Banded Glute Bridge',
+                sets: 2,
+                reps: '15-20 each side',
+                video: "https://www.youtube.com/embed/GjLPEfu5PN0",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Band pull-aparts',
+                sets: 2,
+                reps: '15-25',
+                video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
+                equipment: 'Resistance band'
+            },
+            {
+                name: 'Turkish get up',
+                sets: 3,
+                reps: '2 each side',
+                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
+                equipment: 'dumbell or kettlebell'
+            },
+            {
+                name: 'Goblet pause squat',
+                sets: 3,
+                reps: '5',
+                video: "https://www.youtube.com/embed/xW_lRtqwmoQ",
+                equipment: 'dumbell or kettlebell'
+            },
+            {
+                name: 'Pause bench press',
+                sets: 3,
+                reps: '5',
+                video: "https://www.youtube.com/embed/3SUNUipUXcw",
+                equipment: 'dumbells'
+            },
+            {
+                name: 'Face pulls',
+                sets: 2,
+                reps: '15-25',
+                video: "https://www.youtube.com/embed/7CLtnN8S5b4",
+                equipment: 'resistance band'
+            },
+        ],
+    },
+    week2: {
+        day1Exercises: [
+            {
+                name: 'Band assisted pogo hops',
+                sets: 2,
+                reps: 10,
+                video: "https://www.youtube.com/embed/EpiVBAHCwew",
+                equipment: 'Resistance band'
+            },
+            {
+                name: 'Band assissted Lunge jumps',
+                sets: 2,
+                reps: '3 each leg',
+                video: "https://www.youtube.com/embed/4oJy7OooIcQ",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Front squats',
+                sets: 5,
+                reps: '6-10',
+                video: "https://www.youtube.com/embed/6XghYOzny8U",
+                equipment: 'kettlebells or dumbells'
+            },
+            {
+                name: 'Banded good mornings',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/CTRaCzE8pWU",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Banded Glute Bridge',
+                sets: 2,
+                reps: '15-20',
+                video: "https://www.youtube.com/embed/GjLPEfu5PN0",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Half kneel windmill',
+                sets: 2,
+                reps: '10 each side',
+                video: "https://www.youtube.com/embed/ZAhnYIFtI_Y",
+                equipment: 'dumbell or kettlebell'
+            }
         ],
         day2Exercises: [
             {
-                name: 'Turkish get up',
+                name: 'Banded bent over rows',
                 sets: 2,
-                reps: '3 each side',
-                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
-                equipment: 'dumbell'
+                reps: '10-20',
+                video: "https://www.youtube.com/embed/-g6Yoe11S-4",
+                equipment: 'Dumbells or kettlbells and resistance band'
             },
             {
-                name: 'Exercise ball hamstring curls',
+                name: 'Band pull-aparts',
                 sets: 2,
-                reps: '15-20 each side',
-                video: "https://www.youtube.com/embed/WNB90xXLEOg",
-                equipment: 'yoga ball'
-            },
-            // build reusable function for supersets
-            {
-                name: 'Superset curls and tricep pushdowns',
-                sets: 3,
-                reps: '15-25',
-                video: "https://www.youtube.com/embed/QDioODezRbg",
+                reps: '15-20',
+                video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
                 equipment: 'Resistance band'
             },
+            {
+                name: 'Bench press',
+                sets: 5,
+                reps: '6-10',
+                video: "https://www.youtube.com/embed/G9nf-QZeYWI",
+                equipment: 'dumbells'
+            },
+            {
+                name: 'Underhand Lat Pulldown',
+                sets: 5,
+                reps: 5,
+                video: "https://www.youtube.com/embed/lVhrjZ_cemo",
+                equipment: 'PVC and resistance band'
+            },
+            {
+                name: 'Tricep Pushdown',
+                sets: 2,
+                reps: '15-20',
+                video: "https://www.youtube.com/embed/xW8L2POShSA",
+                equipment: 'Resistance Band'
+            },
+        ],
+        day3Exercises: [
+            {
+                name: 'Banded Glute Bridge',
+                sets: 2,
+                reps: '15-20 each side',
+                video: "https://www.youtube.com/embed/GjLPEfu5PN0",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Band pull-aparts',
+                sets: 2,
+                reps: '15-25',
+                video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
+                equipment: 'Resistance band'
+            },
+            {
+                name: 'Turkish get up',
+                sets: 3,
+                reps: '2 each side',
+                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
+                equipment: 'dumbell or kettlebell'
+            },
+            {
+                name: 'Goblet pause squat',
+                sets: 3,
+                reps: '5',
+                video: "https://www.youtube.com/embed/xW_lRtqwmoQ",
+                equipment: 'dumbell or kettlebell'
+            },
+            {
+                name: 'Pause bench press',
+                sets: 3,
+                reps: '5',
+                video: "https://www.youtube.com/embed/3SUNUipUXcw",
+                equipment: 'dumbells'
+            },
+            {
+                name: 'Thrusters',
+                sets: 1,
+                reps: 10,
+                video: "https://www.youtube.com/embed/VdPjfmRcQfw",
+                equipment: 'Dumbells'
+            },
+        ],
+    },
+    week3: {
+        day1Exercises: [
+            {
+                name: 'Band assisted moon bounds',
+                sets: 2,
+                reps: 10,
+                video: "https://www.youtube.com/embed/BFXHi8lMKDc",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Banded KB swing',
+                sets: 3,
+                reps: 3,
+                video: "https://www.youtube.com/embed/PN9dppWJcGQ",
+                equipment: 'resistance band and kettlebell'
+            },
+            {
+                name: 'Forward jumps',
+                sets: 3,
+                reps: 3,
+                video: "https://www.youtube.com/embed/NRxiu6ERegA",
+                equipment: 'None'
+            },
+            {
+                name: 'Spanish squat',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/SZMidXQy7jY",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Hamstring curls',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/8Wagn999nhA",
+                equipment: 'Yoga ball'
+            },
+        ],
+        day2Exercises: [
+            {
+                name: 'Y,W,Ts',
+                sets: 2,
+                reps: '10-15 each',
+                video: "https://www.youtube.com/embed/jihh8FFWoMk",
+                equipment: 'yoga ball'
+            },
+            {
+                name: 'Incline bench press',
+                sets: 4,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/Fv5EYoJfRt4",
+                equipment: 'bench and dumbells'
+            },
+            {
+                name: 'TRX Rows',
+                sets: 4,
+                reps: '10-12',
+                video: "https://www.youtube.com/embed/p8d2pFLDkEs",
+                equipment: 'TRX'
+            },
+            {
+                name: 'Barbell curls',
+                sets: 2,
+                reps: '15-20',
+                video: "https://www.youtube.com/embed/WeZLdaLggAo",
+                equipment: 'PVC'
+            },
+            {
+                name: 'Skull crushers',
+                sets: 2,
+                reps: '15-20',
+                video: "https://www.youtube.com/embed/ZUZOn9c1VVI",
+                equipment: 'dumbells'
+            },
+            {
+                name: 'Band pull-aparts',
+                sets: 2,
+                reps: '15-25',
+                video: "https://www.youtube.com/embed/kZDAZFxA3-c",
+                equipment: 'resistance band'
+            }
+        ],
+        day3Exercises: [
+            {
+                name: 'Kneel to stand',
+                sets: 2,
+                reps: '5 each side',
+                video: "https://www.youtube.com/embed/aqw289IvO1I",
+                equipment: 'none'
+            },
+            {
+                name: 'Plank to downdog',
+                sets: 2,
+                reps: '10-12',
+                video: "https://www.youtube.com/embed/ZnzPPgrwzxY",
+                equipment: 'none'
+            },
+            {
+                name: 'Band pull-aparts',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/kZDAZFxA3-c",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Pushups',
+                sets: 3,
+                reps: '8-10',
+                video: "https://www.youtube.com/embed/i9sTjhN4Z3M",
+                equipment: 'none'
+            },
+            {
+                name: 'Iso lunge RB row',
+                sets: 4,
+                reps: '10-15 each side',
+                video: "https://www.youtube.com/embed/MpGb7mGkDOM",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Pallof press',
+                sets: 2,
+                reps: '10 each side',
+                video: "https://www.youtube.com/embed/jQ_HhXY3-p0",
+                equipment: 'resistance band'
+            },
+        ],
+    },
+    week4: {
+        day1Exercises: [
+            {
+                name: 'Band assisted moon bounds',
+                sets: 2,
+                reps: 10,
+                video: "https://www.youtube.com/embed/BFXHi8lMKDc",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Side KB swing',
+                sets: 3,
+                reps: '5 each side',
+                video: "https://www.youtube.com/embed/FmSwtxVZS8w",
+                equipment: 'kettlebell'
+            },
+            {
+                name: 'Rocker jumps',
+                sets: 4,
+                reps: 4,
+                video: "https://www.youtube.com/embed/tAxH5njhDTc",
+                equipment: 'bench'
+            },
+            {
+                name: 'Spanish squat',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/SZMidXQy7jY",
+                equipment: 'resistance band'
+            },
+            {
+                name: 'Hamstring curls',
+                sets: 2,
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/8Wagn999nhA",
+                equipment: 'Yoga ball'
+            },
+        ],
+        day2Exercises: [
+            {
+                name: 'Banded bent over rows',
+                sets: 2,
+                reps: '10-20',
+                video: "https://www.youtube.com/embed/-g6Yoe11S-4",
+                equipment: 'Dumbells or kettlbells and resistance band'
+            },
+            {
+                name: 'Band pull-aparts',
+                sets: 2,
+                reps: '15-20',
+                video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
+                equipment: 'Resistance band'
+            },
+            {
+                name: 'Incline bench press',
+                sets: 5,
+                reps: '6-10',
+                video: "https://www.youtube.com/embed/Fv5EYoJfRt4",
+                equipment: 'bench and dumbells'
+            },// left off here
+            // build reusable function for supersets
             {
                 name: 'YWTs',
                 sets: 3,
@@ -348,38 +457,56 @@ const exerciseMeta = {
                 video: "https://www.youtube.com/embed/jS-D4qVmXIk",
                 equipment: 'none'
             },
-            
-            
+            {
+                name: 'Superset curls and tricep pushdowns',
+                sets: 3,
+                reps: '15-25',
+                video: "https://www.youtube.com/embed/QDioODezRbg",
+                equipment: 'Resistance band'
+            },
         ],
         day3Exercises: [
-            // pull throughs, pull overs, band pull aparts, carries
             {
-                name: 'Side KB swing',
-                sets: 3,
-                reps: '10-15 each side',
-                video: "https://www.youtube.com/embed/FmSwtxVZS8w",
-                equipment: 'kettlebell'
+                name: 'Kneel to stand',
+                sets: 2,
+                reps: '5 each side',
+                video: "https://www.youtube.com/embed/aqw289IvO1I",
+                equipment: 'none'
             },
             {
-                name: 'Gorilla Rows',
-                sets: 3,
-                reps: '15-20',
-                video: "https://www.youtube.com/embed/UsxcaALqr2c",
-                equipment: 'kettlebells'
+                name: 'Plank to downdog',
+                sets: 2,
+                reps: '10-12',
+                video: "https://www.youtube.com/embed/ZnzPPgrwzxY",
+                equipment: 'none'
+            },
+            {
+                name: 'Turkish get up',
+                sets: 4,
+                reps: '3 each side',
+                video: "https://www.youtube.com/embed/jFK8FOiLa_M",
+                equipment: 'dumbell or kettlebell'
             },
             {
                 name: 'Band pull-aparts',
                 sets: 3,
-                reps: '15-25',
-                video: 'https://www.youtube.com/embed/kZDAZFxA3-c',
-                equipment: 'Resistance band'
+                reps: '10-15',
+                video: "https://www.youtube.com/embed/kZDAZFxA3-c",
+                equipment: 'resistance band'
             },
             {
-                name: 'Suitcase carry',
+                name: 'Pushups',
                 sets: 2,
-                reps: '60 seconds each side',
-                video: "https://www.youtube.com/embed/wb5s5pBhhZs",
-                equipment: 'kettlebell'
+                reps: '8-10',
+                video: "https://www.youtube.com/embed/i9sTjhN4Z3M",
+                equipment: 'none'
+            },
+            {
+                name: 'Iso lunge RB row',
+                sets: 2,
+                reps: '10-15 each side',
+                video: "https://www.youtube.com/embed/MpGb7mGkDOM",
+                equipment: 'resistance band'
             },
         ]
     }
