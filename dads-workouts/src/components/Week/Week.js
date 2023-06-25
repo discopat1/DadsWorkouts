@@ -9,6 +9,15 @@ import exerciseMeta from '../Data/Data';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
+function createArray(numberOfWeeks) {
+  var arr = new Array(numberOfWeeks);
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = i + 1;
+  }
+  return arr;
+}
+
+const weeksArray = createArray(12)
 
 export default function WeekView() {
   const [week, setWeek] = React.useState('');
@@ -20,42 +29,16 @@ export default function WeekView() {
   };
 
   const renderWeekView = (value) => {
-    if (value===1) {
-        return (
-            <WeekSet
-                day1={exerciseMeta.week1.day1Exercises}
-                day2={exerciseMeta.week1.day2Exercises}
-                day3={exerciseMeta.week1.day3Exercises}
-            />
-        )
-        } else if (value === 2) {
-       return (
-            <WeekSet
-                day1={exerciseMeta.week2.day1Exercises}
-                day2={exerciseMeta.week2.day2Exercises}
-                day3={exerciseMeta.week2.day3Exercises}
-            />
-        )
-       } else if (value === 3) {
-       return (
-            <WeekSet
-            day1={exerciseMeta.week3.day1Exercises}
-            day2={exerciseMeta.week3.day2Exercises}
-            day3={exerciseMeta.week3.day3Exercises}
-            />
-        )
-       } else if (value === 4) {
-        return (
-            <WeekSet
-            day1={exerciseMeta.week4.day1Exercises}
-            day2={exerciseMeta.week4.day2Exercises}
-            day3={exerciseMeta.week4.day3Exercises}
-            />
-        )
-        }
+    if (value) {
+      return (
+        <WeekSet
+          day1 = {exerciseMeta[`week${value}`].day1Exercises}
+          day2 = {exerciseMeta[`week${value}`].day2Exercises}
+          day3 = {exerciseMeta[`week${value}`].day3Exercises}
+        />
+      )
+    }
   }
-
-  
 
   function WeekSet(props) {
 
@@ -105,7 +88,7 @@ export default function WeekView() {
         </React.Fragment>
       )
   }
-  console.log('render week:', renderWeek)
+
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
@@ -114,13 +97,14 @@ export default function WeekView() {
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={week}
-          label="Age"
+          label="Week"
           onChange={handleChange}
         >
-          <MenuItem value={1}>One</MenuItem>
-          <MenuItem value={2}>Two</MenuItem>
-          <MenuItem value={3}>Three</MenuItem>
-          <MenuItem value={4}>Four</MenuItem>
+          {
+            weeksArray.map(week => (
+              <MenuItem value={week}>{week}</MenuItem>
+            ))
+          }
         </Select>
       </FormControl>
       {renderWeek ? renderWeekView(week) : null}
