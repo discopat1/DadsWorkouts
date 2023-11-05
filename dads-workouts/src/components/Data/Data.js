@@ -569,7 +569,7 @@ const exerciseMeta = {
                 name: 'Speed rows',
                 sets: 3,
                 reps: '8',
-                video: "https://www.youtube.com/embed/bPa182aZ3bE",
+                video: "https://www.youtube.com/embed/IdKEZoMqqRI?si=Dm0MDtZaNh33M-ze",
                 equipment: 'resistance band'
             },
             {
@@ -696,7 +696,7 @@ const exerciseMeta = {
                 name: 'Speed rows',
                 sets: 3,
                 reps: '8',
-                video: "https://www.youtube.com/embed/bPa182aZ3bE",
+                video: "https://www.youtube.com/embed/IdKEZoMqqRI?si=Dm0MDtZaNh33M-ze",
                 equipment: 'resistance band'
             },
             {
@@ -823,7 +823,7 @@ const exerciseMeta = {
                 name: 'Speed rows',
                 sets: 3,
                 reps: '10',
-                video: "https://www.youtube.com/embed/bPa182aZ3bE",
+                video: "https://www.youtube.com/embed/IdKEZoMqqRI?si=Dm0MDtZaNh33M-ze",
                 equipment: 'resistance band'
             },
             {
@@ -950,7 +950,7 @@ const exerciseMeta = {
                 name: 'Speed rows',
                 sets: 3,
                 reps: '12',
-                video: "https://www.youtube.com/embed/bPa182aZ3bE",
+                video: "https://www.youtube.com/embed/IdKEZoMqqRI?si=Dm0MDtZaNh33M-ze",
                 equipment: 'resistance band'
             },
             {
