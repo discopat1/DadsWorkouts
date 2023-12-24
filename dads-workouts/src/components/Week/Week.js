@@ -61,25 +61,25 @@ export default function WeekView() {
         <React.Fragment>
         <Grid container spacing={2}>
             <Grid item xs={4}>
-                <Button variant="contained"
+                {/* <Button variant="contained"
                     // onClick={renderDayView}
-                >Day view</Button>
+                >Day view</Button> */}
                 <DayList
                     exercises={day1}
                 />
             </Grid>
             <Grid item xs={4}>
-                <Button variant="contained" 
+                {/* <Button variant="contained" 
                     // onClick={renderDayView(day2)}
-                    >Day view</Button>
+                    >Day view</Button> */}
                 <DayList
                     exercises={day2}
                 />
             </Grid>
             <Grid item xs={4}>
-                <Button variant="contained" 
+                {/* <Button variant="contained" 
                     // onClick={renderDayView(day3)}
-                    >Day view</Button>
+                    >Day view</Button> */}
                 <DayList
                     exercises={day3}
                 />
