@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/DadsWorkouts/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/DadsWorkouts/static/js/main.84e958f7.chunk.js",
-    "main.js.map": "/DadsWorkouts/static/js/main.84e958f7.chunk.js.map",
-    "runtime-main.js": "/DadsWorkouts/static/js/runtime-main.10b72de8.js",
-    "runtime-main.js.map": "/DadsWorkouts/static/js/runtime-main.10b72de8.js.map",
-    "static/js/2.b9e8362c.chunk.js": "/DadsWorkouts/static/js/2.b9e8362c.chunk.js",
-    "static/js/2.b9e8362c.chunk.js.map": "/DadsWorkouts/static/js/2.b9e8362c.chunk.js.map",
-    "static/js/3.1b31153b.chunk.js": "/DadsWorkouts/static/js/3.1b31153b.chunk.js",
-    "static/js/3.1b31153b.chunk.js.map": "/DadsWorkouts/static/js/3.1b31153b.chunk.js.map",
+    "main.css": "/DadsWorkouts/static/css/main.f855e6bc.css",
+    "main.js": "/DadsWorkouts/static/js/main.8d729212.js",
+    "static/js/787.f5147e4c.chunk.js": "/DadsWorkouts/static/js/787.f5147e4c.chunk.js",
     "index.html": "/DadsWorkouts/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/DadsWorkouts/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b9e8362c.chunk.js.LICENSE.txt": "/DadsWorkouts/static/js/2.b9e8362c.chunk.js.LICENSE.txt"
+    "main.f855e6bc.css.map": "/DadsWorkouts/static/css/main.f855e6bc.css.map",
+    "main.8d729212.js.map": "/DadsWorkouts/static/js/main.8d729212.js.map",
+    "787.f5147e4c.chunk.js.map": "/DadsWorkouts/static/js/787.f5147e4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.10b72de8.js",
-    "static/js/2.b9e8362c.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.84e958f7.chunk.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.8d729212.js"
   ]
 }
