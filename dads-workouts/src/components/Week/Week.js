@@ -17,7 +17,7 @@ function createArray(numberOfWeeks) {
   return arr;
 }
 
-const weeksArray = createArray(12)
+const weeksArray = createArray(16)
 
 export default function WeekView() {
   const [week, setWeek] = React.useState('');
